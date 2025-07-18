@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🍽️ RECIPE SEARCH APP</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🍽️ RECIPE FINDER</h1>
+    <form id="search-form">
+      <input type="text" id="search-input" placeholder="Search for a recipe..." />
+      <button class='btn1' type="submit">Search</button>
+    </form>
+
+    <div class="options">
+      <select id="category-filter">
+        <option value="">Filter by Category</option>
+        <option value="Chicken">Chicken</option>
+        <option value="Seafood">Seafood</option>
+        <option value="Vegetarian">Vegetarian</option>
+        <option value="Dessert">Dessert</option>
+      </select>
+
+      <button id="random-btn">Surprise Me! ✨</button>
+      <button id="toggle-mode">Toggle Mode 🌙</button>
+    </div>
+
+    <div id="spinner" class="spinner hidden"></div>
+    <div id="result" class="result-grid"></div>
+    <h2>Your Favorites ❤️</h2>
+    <div id="favorites" class="result-grid"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
